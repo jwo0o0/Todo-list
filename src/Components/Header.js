@@ -2,15 +2,13 @@ import styled from "styled-components"
 
 export const TitleContainer = styled.div`
     width: 100%;
-    height: 150px;
-    border: 1px solid black;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
 `;
 
 export const Title = styled.div`
-    font-family: 'Nanum Gothic', sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: #434343;
