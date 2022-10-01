@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import write_icon from "../images/write-icon.png";
 
 export const WriteBtnContainer = styled.div`
 
@@ -14,12 +15,16 @@ export const WriteBtn = styled.button`
         background-color: #B2C3FF;
         cursor: pointer;
     }
+
+    > img {
+        background-color: transparent;
+    }
 `;
 
 export const Write = () => {
     return (
         <WriteBtnContainer>
-            <WriteBtn>쓰기</WriteBtn>
+            <WriteBtn><img src={write_icon} /></WriteBtn>
         </WriteBtnContainer>
     )
     

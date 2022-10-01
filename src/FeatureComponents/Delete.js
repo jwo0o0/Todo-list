@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import delete_icon from "../images/trash-icon.png";
 
 export const DeleteBtnConainer = styled.div`
     
@@ -14,12 +15,16 @@ export const DeleteBtn = styled.button`
         background-color: #B2C3FF;
         cursor: pointer;
     }
+
+    > img {
+        background-color: transparent;
+    }
 `;
 
 export const Delete = () => {
     return (
         <DeleteBtnConainer>
-            <DeleteBtn>삭제</DeleteBtn>
+            <DeleteBtn><img src={delete_icon} /></DeleteBtn>
         </DeleteBtnConainer>
     )
     

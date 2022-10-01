@@ -1,10 +1,10 @@
 import { Info } from "./Info"
-import { Todos } from "./Todos"
+import { TodoList } from "./TodoList"
 
 export const Main = () => {
     return <>
         <Info />
-        <Todos />
+        <TodoList />
     </>
 
 }
