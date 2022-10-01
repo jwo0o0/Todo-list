@@ -1,8 +1,7 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
+import axios from 'axios';
 import { Todo } from "./Todo";
-import dummydata from '../data/dummy.json';
-
-const todos = dummydata.todos;
 
 export const TodoListContainer = styled.div`
     width: 100%;
@@ -23,6 +22,18 @@ export const TodoListBox = styled.div`
 `;
 
 export const TodoList = () => {
+  const [todos, setTodos] = useState([]);
+  
+  useEffect(() => {
+    axios.get("http://localhost:3001/todos/")
+      .then((res) => {
+        setTodos(res.data);
+      })
+      .catch((error) => {
+        console.error('ERROR: ', error);
+      })
+  })
+
   return (
     <TodoListContainer>
         <TodoListBox>

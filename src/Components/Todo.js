@@ -35,7 +35,7 @@ export const TodoDeleteBtn = styled.button`
 export const Todo = ({id, text, done}) => {
     return (
         <TodoContainer>
-            <TodoCheckbox type='checkbox' checked={done}></TodoCheckbox>
+            <TodoCheckbox type='checkbox'></TodoCheckbox>
             <TodoText>{text}</TodoText>
             <TodoDeleteBtn>X</TodoDeleteBtn>
         </TodoContainer>
