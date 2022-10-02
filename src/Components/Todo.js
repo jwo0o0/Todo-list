@@ -8,6 +8,10 @@ export const TodoContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    button.not-active {
+        visibility: hidden;
+    }
 `;
 
 export const TodoCheckbox = styled.input`
@@ -24,7 +28,7 @@ export const TodoDeleteBtn = styled.button`
     background-color: white;
     border-radius: 50%;
     width: 25px; height: 25px;
-    border: 2px solid #D6DEFD;
+    border: 1px solid #D6DEFD;
 
     &:hover {
         background-color: #D6DEFD;
@@ -32,12 +36,12 @@ export const TodoDeleteBtn = styled.button`
     }
 `;
 
-export const Todo = ({id, text, done}) => {
+export const Todo = ({id, text, done, isDelete}) => {
     return (
         <TodoContainer>
             <TodoCheckbox type='checkbox'></TodoCheckbox>
             <TodoText>{text}</TodoText>
-            <TodoDeleteBtn>X</TodoDeleteBtn>
+            <TodoDeleteBtn className={isDelete ? "" : "not-active"}>X</TodoDeleteBtn>
         </TodoContainer>
     )
 }

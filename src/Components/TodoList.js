@@ -21,7 +21,7 @@ export const TodoListBox = styled.div`
     padding: 10px 0;
 `;
 
-export const TodoList = () => {
+export const TodoList = ({ isDelete, isWrite }) => {
   const [todos, setTodos] = useState([]);
   
   useEffect(() => {
@@ -32,7 +32,7 @@ export const TodoList = () => {
       .catch((error) => {
         console.error('ERROR: ', error);
       })
-  })
+  }, [])
 
   return (
     <TodoListContainer>
@@ -42,6 +42,7 @@ export const TodoList = () => {
               key={todo.id}
               text={todo.text}
               done={todo.done}
+              isDelete={isDelete}
             />
           })}
         </TodoListBox>

@@ -12,10 +12,10 @@ export const InfoContainer = styled.div`
     align-items: center;
     
 `
-export const Info = () => {
+export const Info = ({ handleDeleteBtnClick, handleWriteBtnClick, isDelete, isWrite }) => {
     return <InfoContainer>
-        <Delete />
+        <Delete handleDeleteBtnClick={handleDeleteBtnClick} isDelete={isDelete}/>
         <DateInfo />
-        <Write />
+        <Write handleWriteBtnClick={handleWriteBtnClick} isWrite={isWrite}/>
     </InfoContainer>
 }

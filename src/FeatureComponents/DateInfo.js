@@ -5,7 +5,7 @@ export const DateContainer = styled.div`
 `;
 
 export const TodayDate = styled.div`
-    width: 200px;
+    width: 190px;
     height: 50px;
     border: 1px solid #434343;
     text-align: center;
