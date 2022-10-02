@@ -13,6 +13,7 @@ refactor : 코드 리팩토링에 대한 커밋<br>
 test : 테스트 코드 수정에 대한 커밋<br>
 
 ### json-server api 
+<code>json-server --watch db.json --port 3001</code>
 #### GET
 localhost:3001/todos/
 
