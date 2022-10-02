@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Delete } from "../FeatureComponents/Delete";
-import { Write } from "../FeatureComponents/Write";
+import { Delete } from "../FeatureComponents/DeleteButton";
+import { Write } from "../FeatureComponents/WriteButton";
 import { DateInfo } from "../FeatureComponents/DateInfo";
 
 export const InfoContainer = styled.div`
