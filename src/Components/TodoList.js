@@ -38,7 +38,7 @@ export const TodoList = ({ isDelete, isWrite }) => {
   return (
     <TodoListContainer>
         <TodoListBox>
-          <WriteInput />
+          <WriteInput isWrite={isWrite}/>
           {todos.map((todo) => {
             return <Todo 
               key={todo.id}

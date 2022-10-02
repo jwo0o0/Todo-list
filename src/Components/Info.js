@@ -5,7 +5,7 @@ import { DateInfo } from "../FeatureComponents/DateInfo";
 
 export const InfoContainer = styled.div`
     width: 100%;
-    height: 100px;
+    height: 80px;
 
     display: flex;
     justify-content: center;

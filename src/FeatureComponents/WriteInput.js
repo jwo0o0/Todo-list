@@ -16,6 +16,10 @@ export const WriteInputContainer = styled.div`
         color: #434343;
     }
 
+    &.not-active{
+        display: none;
+    }
+
 `;
 
 export const WriteInputForm = styled.input`
@@ -41,9 +45,9 @@ export const WriteSubmitBtn = styled.button`
     }
 `
 
-export const WriteInput = () => {
+export const WriteInput = ({ isWrite }) => {
     return (
-        <WriteInputContainer>
+        <WriteInputContainer className={isWrite ? "" : "not-active"}>
             <label for="todo_write">Todo</label>
             <WriteInputForm 
                 type="text" 
