@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from 'axios';
 import { Todo } from "./Todo";
+import { WriteInput } from "../FeatureComponents/WriteInput";
 
 export const TodoListContainer = styled.div`
     width: 100%;
@@ -37,6 +38,7 @@ export const TodoList = ({ isDelete, isWrite }) => {
   return (
     <TodoListContainer>
         <TodoListBox>
+          <WriteInput />
           {todos.map((todo) => {
             return <Todo 
               key={todo.id}

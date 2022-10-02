@@ -20,8 +20,6 @@ export const DeleteBtn = styled.button`
         cursor: pointer;
     }
 
-    
-
     > img {
         background-color: transparent;
     }

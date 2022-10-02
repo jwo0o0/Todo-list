@@ -28,10 +28,10 @@ export const TodoDeleteBtn = styled.button`
     background-color: white;
     border-radius: 50%;
     width: 25px; height: 25px;
-    border: 1px solid #D6DEFD;
+    border: 1px solid #FFD19B;
 
     &:hover {
-        background-color: #D6DEFD;
+        background-color: #FFD19B;
         cursor: pointer;
     }
 `;

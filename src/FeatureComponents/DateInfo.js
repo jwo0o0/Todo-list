@@ -8,6 +8,7 @@ export const TodayDate = styled.div`
     width: 190px;
     height: 50px;
     border: 1px solid #434343;
+    color: #434343;
     text-align: center;
     margin: 0 90px;
     border-radius: 30px;
