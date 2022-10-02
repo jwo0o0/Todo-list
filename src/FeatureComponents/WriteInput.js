@@ -10,6 +10,7 @@ export const WriteInputContainer = styled.div`
 
     label {
         width: 40px;
+        margin-left: 5px;
         background-color: white;
         text-align: center;
         color: #434343;
@@ -18,7 +19,7 @@ export const WriteInputContainer = styled.div`
 `;
 
 export const WriteInputForm = styled.input`
-    width: 320px;
+    width: 300px;
     height: 30px;
     background-color: white;
     border: none;
@@ -44,7 +45,12 @@ export const WriteInput = () => {
     return (
         <WriteInputContainer>
             <label for="todo_write">Todo</label>
-            <WriteInputForm type="text" id="todo_write" placeholder="무엇을 할까용?" />
+            <WriteInputForm 
+                type="text" 
+                id="todo_write" 
+                placeholder="무엇을 할까용?"
+                maxLength={30}
+            />
             <WriteSubmitBtn>✓</WriteSubmitBtn>
         </WriteInputContainer>
     )
