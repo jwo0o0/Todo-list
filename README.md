@@ -41,5 +41,14 @@ localhost:3001/todos/
 }
 ```
 
+#### PATCH
+localhost:3001/todos/:id
+```
+{
+    "done": !done
+}
+```
+
 #### DELETE
 localhost:3001/todos/:id
+
