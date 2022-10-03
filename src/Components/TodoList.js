@@ -3,7 +3,6 @@ import styled from "styled-components";
 import axios from 'axios';
 import { Todo } from "./Todo";
 import { WriteInput } from "../FeatureComponents/WriteInput";
-import { render } from "@testing-library/react";
 
 export const TodoListContainer = styled.div`
     width: 100%;
