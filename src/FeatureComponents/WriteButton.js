@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import write_icon from "../images/write-icon.png";
+import write_icon from "../images/write-icon.svg";
 
 export const WriteBtnContainer = styled.div`
     .clicked {

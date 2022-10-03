@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import delete_icon from "../images/trash-icon.png";
+import delete_icon from "../images/trash-icon.svg";
 
 export const DeleteBtnConainer = styled.div`
     .clicked {
