@@ -3,7 +3,7 @@ import write_icon from "../images/write-icon.svg";
 
 export const WriteBtnContainer = styled.div`
     .clicked {
-        background-color: #B2C3FF;
+        background-color: #F19EFF;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;   
     }    
 `;
@@ -11,12 +11,12 @@ export const WriteBtnContainer = styled.div`
 export const WriteBtn = styled.button`
     width: 40px; height: 40px;
     margin: 5px;
-    background-color: #D6DEFD;
+    background-color: #F9D4FF;
     border: 1px solid #434343;
     border-radius: 50%;
 
     &:hover {
-        background-color: #B2C3FF;
+        background-color: #F19EFF;
         cursor: pointer;
     }
 
