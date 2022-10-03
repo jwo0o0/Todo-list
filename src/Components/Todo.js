@@ -37,20 +37,17 @@ export const TodoDeleteBtn = styled.button`
     }
 `;
 
-const handleTodoDeleteBtnClick = (id, setTodos) => {
+const handleTodoDeleteBtnClick = (id, renderTodos) => {
     axios.delete(`http://localhost:3001/todos/${id}`)
         .then(() => {
-            axios.get("http://localhost:3001/todos/")
-                .then((res) => {
-                    setTodos(res.data);
-                })
+            renderTodos();
         })
         .catch((error) => {
             console.error('ERROR: ', error);
         })
 }
 
-const handleTodoCheckboxClick = (id, done, setTodos) => {
+const handleTodoCheckboxClick = (id, done, renderTodos) => {
     axios({
         method: 'patch',
         url: `http://localhost:3001/todos/${id}`,
@@ -59,25 +56,22 @@ const handleTodoCheckboxClick = (id, done, setTodos) => {
         }
     })
     .then(() => {
-        axios.get("http://localhost:3001/todos/")
-            .then((res) => {
-                setTodos(res.data);
-        })
+        renderTodos();
     })
 }
 
-export const Todo = ({id, text, done, isDelete, setTodos}) => {
+export const Todo = ({id, text, done, isDelete, renderTodos}) => {
     return (
         <TodoContainer>
             <TodoCheckbox 
                 type='checkbox' 
                 checked={done} 
-                onChange={() => {handleTodoCheckboxClick(id, done, setTodos)}}
+                onChange={() => {handleTodoCheckboxClick(id, done, renderTodos)}}
             ></TodoCheckbox>
             <TodoText>{text}</TodoText>
             <TodoDeleteBtn 
                 className={isDelete ? "" : "not-active"}
-                onClick={() => handleTodoDeleteBtnClick(id, setTodos)}
+                onClick={() => handleTodoDeleteBtnClick(id, renderTodos)}
             >X</TodoDeleteBtn>
         </TodoContainer>
     )

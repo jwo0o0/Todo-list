@@ -3,6 +3,7 @@ import styled from "styled-components";
 import axios from 'axios';
 import { Todo } from "./Todo";
 import { WriteInput } from "../FeatureComponents/WriteInput";
+import { render } from "@testing-library/react";
 
 export const TodoListContainer = styled.div`
     width: 100%;
@@ -24,21 +25,25 @@ export const TodoListBox = styled.div`
 
 export const TodoList = ({ isDelete, isWrite }) => {
   const [todos, setTodos] = useState([]);
-  
-  useEffect(() => {
-    axios.get("http://localhost:3001/todos/")
+
+  const renderTodos = () => {
+    axios.get("http://localhost:3001/todos")
       .then((res) => {
         setTodos(res.data);
       })
       .catch((error) => {
         console.error('ERROR: ', error);
       })
+  }
+  
+  useEffect(() => {
+    renderTodos();
   }, [])
 
   return (
     <TodoListContainer>
         <TodoListBox>
-          <WriteInput isWrite={isWrite}/>
+          <WriteInput isWrite={isWrite} renderTodos={renderTodos}/>
           {todos.map((todo) => {
             return <Todo 
               key={todo.id}
@@ -46,7 +51,7 @@ export const TodoList = ({ isDelete, isWrite }) => {
               text={todo.text}
               done={todo.done}
               isDelete={isDelete}
-              setTodos={setTodos}
+              renderTodos={renderTodos}
             />
           })}
         </TodoListBox>

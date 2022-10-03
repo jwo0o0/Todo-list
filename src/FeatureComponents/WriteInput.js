@@ -1,3 +1,5 @@
+import axios from "axios";
+import { useState, useRef } from "react";
 import styled from "styled-components";
 
 export const WriteInputContainer = styled.div`
@@ -46,7 +48,32 @@ export const WriteSubmitBtn = styled.button`
     }
 `
 
-export const WriteInput = ({ isWrite }) => {
+export const WriteInput = ({ isWrite, renderTodos }) => {
+    const [writeinput, setWriteinput] = useState('');
+    const writeinputEl = useRef(null);
+
+    const handleWriteInputChange = (event) => {
+        setWriteinput(event.target.value);
+    }
+
+    const handleWriteSubmitBtnClick = () => {
+        axios({
+            method: 'post',
+            url: 'http://localhost:3001/todos',
+            data: {
+                text:writeinput,
+                done: false
+            }
+        })
+        .then(() => {
+            writeinputEl.current.value = "";
+            renderTodos();
+        })
+        .catch((error) => {
+            console.error('ERROR: ', error);
+        })
+    }
+
     return (
         <WriteInputContainer className={isWrite ? "" : "not-active"}>
             <label htmlFor="todo_write">Todo</label>
@@ -55,8 +82,10 @@ export const WriteInput = ({ isWrite }) => {
                 id="todo_write" 
                 placeholder="무엇을 할까용?"
                 maxLength={30}
+                ref={writeinputEl}
+                onChange={(e) => {handleWriteInputChange(e)}}
             />
-            <WriteSubmitBtn>✓</WriteSubmitBtn>
+            <WriteSubmitBtn onClick={handleWriteSubmitBtnClick}>✓</WriteSubmitBtn>
         </WriteInputContainer>
     )
 }

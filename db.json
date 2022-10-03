@@ -2,18 +2,13 @@
   "todos": [
     {
       "text": "밥 먹기",
-      "done": false,
+      "done": true,
       "id": 1
     },
     {
       "text": "맛있는 요리 하기",
       "done": false,
       "id": 2
-    },
-    {
-      "text": "공부하기",
-      "done": false,
-      "id": 3
     }
   ]
 }
