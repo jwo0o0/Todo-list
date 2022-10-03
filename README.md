@@ -15,7 +15,7 @@ test : 테스트 코드 수정에 대한 커밋<br>
 ### json-server api 
 <code>json-server --watch db.json --port 3001</code>
 #### GET
-localhost:3001/todos/
+[localhost:3001/todos/](http://localhost:3001/todos/)
 
 ```
 [
@@ -33,7 +33,7 @@ localhost:3001/todos/
 ```
 
 #### POST
-localhost:3001/todos/
+[localhost:3001/todos/](http://localhost:3001/todos/)
 ```
 {
     "text": "맛있는 요리 하기",
@@ -42,7 +42,7 @@ localhost:3001/todos/
 ```
 
 #### PATCH
-localhost:3001/todos/:id
+[localhost:3001/todos/:id](http://localhost:3001/todos/:id)
 ```
 {
     "done": !done
@@ -50,5 +50,5 @@ localhost:3001/todos/:id
 ```
 
 #### DELETE
-localhost:3001/todos/:id
+[localhost:3001/todos/:id](http://localhost:3001/todos/:id)
 
