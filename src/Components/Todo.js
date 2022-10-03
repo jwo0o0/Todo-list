@@ -16,7 +16,10 @@ export const TodoContainer = styled.div`
 `;
 
 export const TodoCheckbox = styled.input`
-    
+    width: 13px;
+    height: 13px;
+    margin-left: 17px;
+    margin-right: 17px;
 `;
 
 export const TodoText = styled.div`
@@ -30,6 +33,7 @@ export const TodoDeleteBtn = styled.button`
     border-radius: 50%;
     width: 25px; height: 25px;
     border: 1px solid #FFD19B;
+    color: #434343;
 
     &:hover {
         background-color: #FFD19B;
