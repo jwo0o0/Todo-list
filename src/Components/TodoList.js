@@ -27,7 +27,7 @@ export const TodoList = ({ isDelete, isWrite }) => {
   const [todos, setTodos] = useState([]);
 
   const renderTodos = () => {
-    axios.get("http://localhost:3001/todos")
+    axios.get("http://localhost:3001/todos?_sort=id&_order=DESC")
       .then((res) => {
         setTodos(res.data);
       })
