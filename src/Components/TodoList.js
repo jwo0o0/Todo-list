@@ -42,9 +42,11 @@ export const TodoList = ({ isDelete, isWrite }) => {
           {todos.map((todo) => {
             return <Todo 
               key={todo.id}
+              id={todo.id}
               text={todo.text}
               done={todo.done}
               isDelete={isDelete}
+              setTodos={setTodos}
             />
           })}
         </TodoListBox>

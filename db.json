@@ -1,24 +1,19 @@
 {
   "todos": [
     {
-      "id": 1,
-      "text": "책 읽기",
-      "done": false
+      "text": "밥 먹기",
+      "done": true,
+      "id": 1
     },
     {
-      "id": 2,
-      "text": "모던 javascript 딥다이브 공부",
-      "done": false
+      "text": "맛있는 요리 하기",
+      "done": false,
+      "id": 2
     },
     {
-      "id": 3,
-      "text": "프로그래머스 문제 풀기",
-      "done": true
-    },
-    {
-      "id": 4,
-      "text": "헬스장 가기",
-      "done": true
+      "text": "공부하기",
+      "done": false,
+      "id": 3
     }
   ]
 }

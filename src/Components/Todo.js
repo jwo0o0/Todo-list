@@ -1,3 +1,4 @@
+import axios from "axios";
 import styled from "styled-components";
 
 export const TodoContainer = styled.div`
@@ -36,12 +37,32 @@ export const TodoDeleteBtn = styled.button`
     }
 `;
 
-export const Todo = ({id, text, done, isDelete}) => {
+const handleTodoDeleteBtnClick = (id, setTodos) => {
+    axios.delete(`http://localhost:3001/todos/${id}`)
+        .then(() => {
+            axios.get("http://localhost:3001/todos/")
+                .then((res) => {
+                    setTodos(res.data);
+                })
+        })
+        .catch((error) => {
+            console.error('ERROR: ', error);
+        })
+}
+
+const handleTodoCheckboxClick = (id) => {
+    console.log('click!', id)
+}
+
+export const Todo = ({id, text, done, isDelete, setTodos}) => {
     return (
         <TodoContainer>
-            <TodoCheckbox type='checkbox'></TodoCheckbox>
+            <TodoCheckbox type='checkbox' checked={done} onChange={() => {handleTodoCheckboxClick(id)}}></TodoCheckbox>
             <TodoText>{text}</TodoText>
-            <TodoDeleteBtn className={isDelete ? "" : "not-active"}>X</TodoDeleteBtn>
+            <TodoDeleteBtn 
+                className={isDelete ? "" : "not-active"}
+                onClick={() => handleTodoDeleteBtnClick(id, setTodos)}
+            >X</TodoDeleteBtn>
         </TodoContainer>
     )
 }

@@ -42,13 +42,14 @@ export const WriteSubmitBtn = styled.button`
 
     &:hover {
         background-color: #F4B0FF;
+        cursor: pointer;
     }
 `
 
 export const WriteInput = ({ isWrite }) => {
     return (
         <WriteInputContainer className={isWrite ? "" : "not-active"}>
-            <label for="todo_write">Todo</label>
+            <label htmlFor="todo_write">Todo</label>
             <WriteInputForm 
                 type="text" 
                 id="todo_write" 
