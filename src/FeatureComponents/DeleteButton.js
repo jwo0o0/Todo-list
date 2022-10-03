@@ -3,7 +3,7 @@ import delete_icon from "../images/trash-icon.svg";
 
 export const DeleteBtnConainer = styled.div`
     .clicked {
-        background-color: #FDB662;
+        background-color: #FFBA68;
         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     }
 `;
@@ -16,7 +16,7 @@ export const DeleteBtn = styled.button`
     border-radius: 50%;
 
     &:hover {
-        background-color: #FDB662;
+        background-color: #FFBA68;
         cursor: pointer;
     }
 
