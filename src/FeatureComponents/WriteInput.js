@@ -74,6 +74,12 @@ export const WriteInput = ({ isWrite, renderTodos }) => {
         })
     }
 
+    const handleOnKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            handleWriteSubmitBtnClick();
+        }
+    }
+
     return (
         <WriteInputContainer className={isWrite ? "" : "not-active"}>
             <label htmlFor="todo_write">Todo</label>
@@ -84,6 +90,7 @@ export const WriteInput = ({ isWrite, renderTodos }) => {
                 maxLength={30}
                 ref={writeinputEl}
                 onChange={(e) => {handleWriteInputChange(e)}}
+                onKeyPress={handleOnKeyPress}
             />
             <WriteSubmitBtn onClick={handleWriteSubmitBtnClick}>✓</WriteSubmitBtn>
         </WriteInputContainer>
