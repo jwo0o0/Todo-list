@@ -1,7 +1,9 @@
 # Todo list
 2022.09.30 ~
 
+https://velog.io/@jwo0o0/React%EB%A1%9C-%ED%88%AC%EB%91%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8-%EA%B0%9C%EB%B0%9C%ED%95%98%EA%B8%B0
 
+### git commit rule
 feat : 새로운 기능에 대한 커밋<br>
 fix : 버그 수정에 대한 커밋<br>
 build : 빌드 관련 파일 수정에 대한 커밋<br>
