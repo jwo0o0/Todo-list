@@ -28,7 +28,9 @@ export const TodoList = ({ isDelete, isWrite }) => {
   const renderTodos = () => {
     axios.get("http://localhost:3001/todos?_sort=id&_order=DESC")
       .then((res) => {
-        setTodos(res.data);
+        const notFinishedTodos = res.data.filter(el => el.done === false);
+        const FinishedTodos = res.data.filter(el => el.done === true);
+        setTodos([...notFinishedTodos, ...FinishedTodos]);
       })
       .catch((error) => {
         console.error('ERROR: ', error);
