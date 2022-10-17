@@ -1,5 +1,6 @@
 import axios from "axios";
 import styled from "styled-components";
+import { TodoDate } from "./TodoDate";
 
 export const TodoContainer = styled.div`
     width: 410px;
@@ -7,11 +8,11 @@ export const TodoContainer = styled.div`
     background-color: white;
     border-bottom: 1px solid #434343;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 
     button.not-active {
-        visibility: hidden;
+        display: none;
     }
 `;
 
@@ -32,6 +33,7 @@ export const TodoDeleteBtn = styled.button`
     background-color: white;
     border-radius: 50%;
     width: 25px; height: 25px;
+    margin-left: 30px;
     border: 1px solid #FFD19B;
     color: #434343;
 
@@ -77,6 +79,7 @@ export const Todo = ({id, text, done, isDelete, renderTodos}) => {
                 className={isDelete ? "" : "not-active"}
                 onClick={() => handleTodoDeleteBtnClick(id, renderTodos)}
             >X</TodoDeleteBtn>
+            <TodoDate isDelete={isDelete}></TodoDate>
         </TodoContainer>
     )
 }
