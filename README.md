@@ -1,6 +1,10 @@
 # Todo list
 2022.09.30 ~
 
+
+
+https://user-images.githubusercontent.com/70098708/196369532-0531bb85-a7f5-4b5a-9956-64c4c76f1f22.mov
+
 https://velog.io/@jwo0o0/React로-투두-리스트-개발하기
 
 ### git commit rule
