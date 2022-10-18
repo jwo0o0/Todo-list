@@ -93,6 +93,7 @@ export const TodoEditInput = styled.input`
     background-color: white;
     border: none;
     border-bottom: 1px solid #434343;
+    outline: none;
 `
 
 const handleTodoDeleteBtnClick = (id, renderTodos) => {
