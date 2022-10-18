@@ -59,6 +59,11 @@ test : 테스트 코드 수정에 대한 커밋<br>
     "done": !done
 }
 ```
+```
+{
+    "text": 수정한 todo 내용
+}
+```
 
 #### DELETE
 [localhost:3001/todos/:id](http://localhost:3001/todos/:id)
