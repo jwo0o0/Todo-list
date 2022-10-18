@@ -2,6 +2,7 @@
 2022.09.30 ~
 
 
+https://jwo0o0.github.io/Todo-list/
 
 https://user-images.githubusercontent.com/70098708/196369532-0531bb85-a7f5-4b5a-9956-64c4c76f1f22.mov
 
