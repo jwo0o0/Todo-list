@@ -4,7 +4,8 @@
 
 https://jwo0o0.github.io/Todo-list/
 
-https://user-images.githubusercontent.com/70098708/196369532-0531bb85-a7f5-4b5a-9956-64c4c76f1f22.mov
+https://user-images.githubusercontent.com/70098708/196380139-e7edc0b2-2a0d-417d-9378-f41d270751e4.mov
+
 
 https://velog.io/@jwo0o0/React로-투두-리스트-개발하기
 
