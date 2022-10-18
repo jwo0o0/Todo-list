@@ -22,14 +22,16 @@ test : 테스트 코드 수정에 대한 커밋<br>
 ```
 [
     {
-        "id": 1,
-        "text": "책 읽기",
-        "done": false
+      "text": "공부하기",
+      "done": false,
+      "date": "2022. 10. 18",
+      "id": 1
     },
     {
-        "id": 2,
-        "text": "모던 javascirpt 딥다이브 공부",
-        "done": false
+      "text": "밥 먹기",
+      "done": false,
+      "date": "2022. 10. 18",
+      "id": 2
     },
 ]
 ```
@@ -39,7 +41,8 @@ test : 테스트 코드 수정에 대한 커밋<br>
 ```
 {
     "text": "맛있는 요리 하기",
-    "done": false
+    "done": false,
+    "date": "2022. 10. 18",
 }
 ```
 
