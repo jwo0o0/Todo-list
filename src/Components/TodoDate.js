@@ -11,13 +11,10 @@ export const TodoDateContainer = styled.div`
     }
 `;
 
-const now = new Date();
-const today = `${now.getFullYear()}. ${String(now.getMonth() + 1).padStart(2, '0')}. ${String(now.getDate()).padStart(2, '0')}`;
-
-export const TodoDate = ({ isDelete }) => {
+export const TodoDate = ({ isDelete, createdDate }) => {
     return (
         <TodoDateContainer className={isDelete ? "not-active" : ""}>
-            {today}
+            {createdDate}
         </TodoDateContainer>
     )
 }

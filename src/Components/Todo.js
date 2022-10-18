@@ -66,7 +66,7 @@ const handleTodoCheckboxClick = (id, done, renderTodos) => {
     })
 }
 
-export const Todo = ({id, text, done, isDelete, renderTodos}) => {
+export const Todo = ({ id, text, done, createdDate, isDelete, renderTodos}) => {
     return (
         <TodoContainer>
             <TodoCheckbox 
@@ -79,7 +79,7 @@ export const Todo = ({id, text, done, isDelete, renderTodos}) => {
                 className={isDelete ? "" : "not-active"}
                 onClick={() => handleTodoDeleteBtnClick(id, renderTodos)}
             >X</TodoDeleteBtn>
-            <TodoDate isDelete={isDelete}></TodoDate>
+            <TodoDate isDelete={isDelete} createdDate={createdDate}></TodoDate>
         </TodoContainer>
     )
 }

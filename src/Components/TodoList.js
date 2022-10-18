@@ -51,6 +51,7 @@ export const TodoList = ({ isDelete, isWrite }) => {
               id={todo.id}
               text={todo.text}
               done={todo.done}
+              createdDate={todo.date}
               isDelete={isDelete}
               renderTodos={renderTodos}
             />
