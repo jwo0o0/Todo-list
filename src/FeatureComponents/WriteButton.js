@@ -32,7 +32,7 @@ export const Write = ({ handleWriteBtnClick, isWrite }) => {
                 onClick={handleWriteBtnClick}
                 className={isWrite ? "clicked" : ""}
             >
-            <img src={write_icon} />
+            <img src={write_icon} alt="투두 입력 버튼"/>
             </WriteBtn>
         </WriteBtnContainer>
     )

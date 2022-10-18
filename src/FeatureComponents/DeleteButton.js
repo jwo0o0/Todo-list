@@ -33,7 +33,7 @@ export const Delete = ({ handleDeleteBtnClick, isDelete }) => {
                 onClick={handleDeleteBtnClick} 
                 className={isDelete ? "clicked" : ""}
             >
-            <img src={delete_icon} />
+            <img src={delete_icon} alt="삭제 버튼"/>
             </DeleteBtn>
         </DeleteBtnConainer>
     )

@@ -32,7 +32,7 @@ export const DateInfo = () => {
     return (
         <DateContainer>
             <TodayDate>
-                <img src={date_background_img} />
+                <img src={date_background_img} alt="날짜 배경 이미지"/>
                 <a>{today}</a>
             </TodayDate>
         </DateContainer>
