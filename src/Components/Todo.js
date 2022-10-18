@@ -27,6 +27,10 @@ export const TodoText = styled.div`
     width: 300px;
     background-color: white;
     font-size: 14px;
+
+    &.done {
+        text-decoration: line-through;
+    }
 `;
 
 export const TodoDeleteBtn = styled.button`
@@ -74,7 +78,7 @@ export const Todo = ({ id, text, done, createdDate, isDelete, renderTodos}) => {
                 checked={done} 
                 onChange={() => {handleTodoCheckboxClick(id, done, renderTodos)}}
             ></TodoCheckbox>
-            <TodoText>{text}</TodoText>
+            <TodoText className={done ? "done" : null}>{text}</TodoText>
             <TodoDeleteBtn 
                 className={isDelete ? "" : "not-active"}
                 onClick={() => handleTodoDeleteBtnClick(id, renderTodos)}
