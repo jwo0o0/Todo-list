@@ -9,10 +9,10 @@ Amplify.configure(awsconfig);
 
 function App() {
   return (
-      <div className="App">
-        <Header />
-        <Main />
-      </div>
+    <div className="App">
+      <Header />
+      <Main />
+    </div>
   );
 }
 

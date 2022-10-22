@@ -2,14 +2,14 @@
   "name": "todo-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "./",
+  "homepage": "http://./",
   "dependencies": {
-    "@aws-amplify/api": "^4.0.57",
     "@aws-amplify/pubsub": "^4.5.7",
     "@aws-amplify/ui-react": "^3.5.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "aws-amplify": "^4.3.39",
     "axios": "^0.27.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -44,5 +44,16 @@
   },
   "devDependencies": {
     "push-dir": "^0.4.1"
+  },
+  "description": "2022.09.30 ~",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwo0o0/Todo-list.git"
+  },
+  "author": "jwo0o0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwo0o0/Todo-list/issues"
   }
 }
