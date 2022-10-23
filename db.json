@@ -1,0 +1,22 @@
+{
+  "todos": [
+    {
+      "text": "공부하기",
+      "done": true,
+      "date": "2022. 10. 18",
+      "id": 1
+    },
+    {
+      "text": "에브리띵 에브리웨어 올앳원스",
+      "done": true,
+      "date": "2022. 10. 18",
+      "id": 3
+    },
+    {
+      "text": "aws-amplify 공부",
+      "done": false,
+      "date": "2022. 10. 22",
+      "id": 4
+    }
+  ]
+}
