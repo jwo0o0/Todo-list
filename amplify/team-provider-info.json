@@ -10,6 +10,17 @@
       "StackName": "amplify-todolist-dev-204158",
       "StackId": "arn:aws:cloudformation:ap-northeast-2:423244128995:stack/amplify-todolist-dev-204158/b3dc4440-52c7-11ed-b881-063adb3ebac8",
       "AmplifyAppId": "day1x8flzmhra"
+    },
+    "categories": {
+      "auth": {
+        "todolist21076aca": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "day1x8flzmhra",
+          "type": "cicd"
+        }
+      }
     }
   }
 }
