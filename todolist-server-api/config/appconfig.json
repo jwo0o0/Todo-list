@@ -1,0 +1,15 @@
+{
+  "readOnly": false,
+  "enableApiKeyAuth": false,
+  "jsonFile": "/Users/jwo0o0/Desktop/web/todo-list/db.json",
+  "enableJSONValidation": true,
+  "enableSwagger": true,
+  "logLevel": "info",
+  "stackName": "todolist-server-api",
+  "routes": {
+    "apiRoutePath": "/api",
+    "swaggerUIRoutePath": "/ui",
+    "swaggerSpecRoutePath": "/api-spec",
+    "graphqlRoutePath": "/graphql"
+  }
+}
