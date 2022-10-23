@@ -61,7 +61,7 @@ export const WriteInput = ({ isWrite, renderTodos }) => {
         const date = `${now.getFullYear()}. ${String(now.getMonth() + 1).padStart(2, '0')}. ${String(now.getDate()).padStart(2, '0')}`;
         axios({
             method: 'post',
-            url: 'http://localhost:3001/todos',
+            url: 'http://localhost:3000/api/todos',
             data: {
                 text:writeinput,
                 done: false,

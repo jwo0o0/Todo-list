@@ -97,7 +97,7 @@ export const TodoEditInput = styled.input`
 `
 
 const handleTodoDeleteBtnClick = (id, renderTodos) => {
-    axios.delete(`http://localhost:3001/todos/${id}`)
+    axios.delete(`http://localhost:3000/api/todos/${id}`)
         .then(() => {
             renderTodos();
         })
@@ -109,7 +109,7 @@ const handleTodoDeleteBtnClick = (id, renderTodos) => {
 const handleTodoCheckboxClick = (id, done, renderTodos) => {
     axios({
         method: 'patch',
-        url: `http://localhost:3001/todos/${id}`,
+        url: `http://localhost:3000/api/todos/${id}`,
         data: {
             done: !done
         }
@@ -124,7 +124,7 @@ const handleEditBtnClick = (id, editInput, isEditMode, setEditMode, renderTodos)
     if (isEditMode === true) {
         axios({
             method: 'patch',
-            url: `http://localhost:3001/todos/${id}`,
+            url: `http://localhost:3000/api/todos/${id}`,
             data: {
                 text: editInput
             }
