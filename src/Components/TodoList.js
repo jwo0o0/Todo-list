@@ -26,7 +26,7 @@ export const TodoList = ({ isDelete, isWrite }) => {
   const [todos, setTodos] = useState([]);
 
   const renderTodos = () => {
-    axios.get("http://localhost:3001/todos?_sort=id&_order=DESC")
+    axios.get("http://localhost:3000/api/todos?_sort=id&_order=DESC")
       .then((res) => {
         const notFinishedTodos = res.data.filter(el => el.done === false);
         const FinishedTodos = res.data.filter(el => el.done === true);
