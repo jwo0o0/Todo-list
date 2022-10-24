@@ -31,5 +31,13 @@
       "type": "cicd",
       "lastPushTimeStamp": "2022-10-23T11:54:59.230Z"
     }
-  }
+  },
+  "function": {
+    "todolist69412733": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "api": {}
 }

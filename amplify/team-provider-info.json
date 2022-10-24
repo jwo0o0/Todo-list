@@ -20,6 +20,12 @@
           "appId": "day1x8flzmhra",
           "type": "cicd"
         }
+      },
+      "function": {
+        "todolist69412733": {
+          "deploymentBucketName": "amplify-todolist-dev-204158-deployment",
+          "s3Key": "amplify-builds/todolist69412733-386b474d314349723268-build.zip"
+        }
       }
     }
   }
